@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.flip-container{
+ 
+  width: 350px;
+  height:450px;
+  background-color:transparent;
+  border-radius: 10px;
+  perspective: 1200px;
+}
+
+/* Flip Inner Container */
+.flip-inner-container{
+  position: relative;
+  width: 100%;
+  height: 95%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  
+
+}
+/* add hover to Flip horizonally */
+.flip-container:hover .flip-inner-container{
+  transform: rotateY(180deg);
+}
+
+/* position front and back */
+
+.flip-front,
+.flip-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* background-color: green; */
+  border-radius: 10px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* flip  front from Start Here */
+ .flip-front{
+  background: #56CCF2;  
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  
+  background: linear-gradient(to right, #2F80ED, #56CCF2); 
+color: #ffffff;
+padding: 20px;
+} 
+
+.flip-front .profile-image1{
+  /* background-image:src="image\profile\IMG_9585.JPG"; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;  
+  border-radius:50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.flip-front h3{
+  margin-top: 10px;
+  font-size: 80px;
+  font-family: 'Italianno', cursive;
+  color: #000000;
+}
+
+.flip-front h6{
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: 'Lilita One', cursive;
+  
+}
+/* flip back from Start Here */
+.flip-back{
+  background: #56CCF2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
+
+  transform: rotateY(180deg);
+padding: 20px;
+}
+
+.flip-back form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flip-back form input[type="text"], .back form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+  background: linear-gradient(to right, #434343, #000000); 
+  color:#ffffff;
+}
+.flip-back form input[type="submit"] {
+  background: linear-gradient(to left, #434343, #000000); 
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+textarea {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  border:none; 
+  border-radius: 20px; 
+  width: 90%;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #434343, #000000); 
+}
+.flip-back form input[type="submit"]:hover {
+  background: linear-gradient(to right, #434343, #000000); 
+}
+.flip-back .social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.flip-back .social-icons a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding:10px;
+  width: 30px;
+  height:30px;
+  font-size: 30px;
+  border-radius:50%;
+  background-color: #000000;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+}
+
+.credit {
+    color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Verdana,Geneva,Tahoma,sans-serif;
+}
