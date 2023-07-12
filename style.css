@@ -99,7 +99,7 @@ padding: 20px;
 /* flip back from Start Here */
 .flip-back{
   background: #2F80ED; 
-  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  
+  background: -webkit-linear-gradient(to right, #912fed, #4860ec);  
   background: linear-gradient(to right, #912fed, #4860ec);
 
 transform: rotateY(180deg);
@@ -171,7 +171,7 @@ textarea {
 }
 
 .credit {
-    color: #fff;
+    color: #ec0808;
   text-align: center;
   margin-top: 10px;
   font-family: Verdana,Geneva,Tahoma,sans-serif;
