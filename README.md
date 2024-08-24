@@ -4,11 +4,9 @@ This project features a flip profile card with a smooth 3D flip effect. The card
 
 ## Preview
 
-### Front View
+### Front View and Back View
 ![Front View](image/profile/flip1.png)
 
-### Back View
-![Back View](image/profile/flip 2.png)
 
 ## Features
 
@@ -20,6 +18,7 @@ This project features a flip profile card with a smooth 3D flip effect. The card
 
 - `index.html` - HTML structure for the profile card.
 - `style.css` - CSS styling for the card's flip effect and layout.
+- ![Back View](image/profile/flip2.png)
 
 ## Usage
 
